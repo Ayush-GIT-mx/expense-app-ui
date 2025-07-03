@@ -5,24 +5,36 @@ const HomePageNavbar = () => {
   return (
     <>
       <Navbar fluid>
-        {/* Add A Brand Logo AfterWards for now Lucid Works*/}
         <Navbar.Brand href="/">
           <Receipt />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            FlowTrack
+            Flowtrack
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="/">
-            Home
+          <Navbar.Link
+            href="/about"
+            className="hover:text-black font-bold"
+          >
+            About
           </Navbar.Link>
-          <Navbar.Link href="/about">About</Navbar.Link>
-          <Navbar.Link href="/services">Services</Navbar.Link>
-          <Navbar.Link href="/login">
+          <Navbar.Link
+            href="/services"
+            className="hover:text-black font-bold"
+          >
+            Services
+          </Navbar.Link>
+          <Navbar.Link
+            href="/login"
+            className="hover:text-black font-bold"
+          >
             <LogIn className="inline h-5 w-5" /> Login
           </Navbar.Link>
-          <Navbar.Link href="/sign-up">
+          <Navbar.Link
+            href="/sign-up"
+            className="hover:text-black font-bold"
+          >
             <User2 className="inline h-5 w-5" /> Sign-up
           </Navbar.Link>
         </Navbar.Collapse>
@@ -32,3 +44,4 @@ const HomePageNavbar = () => {
 };
 
 export default HomePageNavbar;
+

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  @apply bg-black;
+}
+/* global.css */
+.bg-black-global {
+  background-color: #000;
+}
